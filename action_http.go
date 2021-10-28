@@ -68,8 +68,7 @@ func httpAction(c *cli.Context) error {
 		pattern = c.String("input")
 	}
 
-	fsys := os.DirFS("")
-	matches, err := doublestar.Glob(fsys, pattern)
+	matches, err := doublestar.Glob(os.DirFS("."), pattern)
 	if err != nil {
 		return err
 	}
