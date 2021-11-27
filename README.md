@@ -1,3 +1,5 @@
+# WARNING: THIS is **no longer** maintained !!!
+
 # `togo` - togo provides tools to convert files to go
 
 ```
